@@ -1,6 +1,4 @@
 import playerFactory from './soundPlayerFactory';
-
-require('dotenv').config();
 import { Gpio } from 'onoff';
 import GPIO_CONFIG from './gpio.config';
 
