@@ -1,0 +1,30 @@
+{
+  "name": "home-guard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node src/index.js",
+    "build": "babel src --out-dir dist",
+    "serve": "node --inspect-brk dist/index.js",
+    "test": "./node_modules/.bin/mocha --compilers js:@babel/register ./**/*.spec.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "@babel/cli": "^7.1.6",
+    "@babel/node": "^7.0.0",
+    "@babel/preset-env": "^7.1.6",
+    "nodemon": "^1.18.7"
+  },
+  "dependencies": {
+    "assert": "^1.4.1",
+    "audio-loader": "^1.0.3",
+    "audio-play": "^2.2.1",
+    "dotenv": "^8.2.0",
+    "onoff": "^6.0.1",
+    "play-sound": "^1.1.3"
+  }
+}
