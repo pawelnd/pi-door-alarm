@@ -26,5 +26,5 @@ process.on('SIGINT', (_) => {
 });
 
 setInterval(() => {
-  console.log(1);
-}, 1000);
+  console.log(`Health check ${new Date().getTime()}` );
+}, 1000 * 10);
