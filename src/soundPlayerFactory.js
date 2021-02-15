@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 
-const MUSIC_BANK = './src/music/';
+const MUSIC_BANK = `${__dirname}/../sounds/`;
 const ALARM_DURATION_SEC = 4;
 
 const playerFactory = () => {
