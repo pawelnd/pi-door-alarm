@@ -2,7 +2,6 @@ import fs from 'fs';
 import path from 'path';
 
 const MUSIC_BANK = `${__dirname}/../sounds/`;
-const ALARM_DURATION_SEC = 4;
 
 const playerFactory = () => {
   const player = require('play-sound')({ mplayer: [] });
@@ -42,7 +41,6 @@ const playerFactory = () => {
         isPlaying = false;
         process = null;
       });
-      setTimeout(stopPlaying, 1000 * ALARM_DURATION_SEC);
     },
     stop: stopPlaying,
   };
